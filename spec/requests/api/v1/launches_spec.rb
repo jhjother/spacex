@@ -3,13 +3,19 @@ require 'rails_helper'
 describe Api::V1::LaunchesController, type: :request do
   let(:response_body) { JSON.parse(response.body) }
 
+  let(:params) do
+    {
+      as: :json
+    }
+  end
+
   describe 'GET /api/v1/launches/next' do
     context 'when show next launch' do
       before(:each) { VCR.insert_cassette('launches/next') }
       after(:each) { VCR.eject_cassette }
 
       before do
-        get '/api/v1/launches/next'
+        get '/api/v1/launches/next', params
       end
 
       let(:expect_response) do
@@ -31,7 +37,7 @@ describe Api::V1::LaunchesController, type: :request do
       after(:each) { VCR.eject_cassette }
 
       before do
-        get '/api/v1/launches/latest'
+        get '/api/v1/launches/latest', params
       end
 
       let(:expect_response) do
@@ -53,7 +59,7 @@ describe Api::V1::LaunchesController, type: :request do
       after(:each) { VCR.eject_cassette }
 
       before do
-        get '/api/v1/launches/upcoming'
+        get '/api/v1/launches/upcoming', params
       end
 
       let(:expect_response) do
@@ -75,7 +81,7 @@ describe Api::V1::LaunchesController, type: :request do
       after(:each) { VCR.eject_cassette }
 
       before do
-        get '/api/v1/launches/past'
+        get '/api/v1/launches/past', params
       end
 
       it { expect(response_body.count).to eq 185 }
