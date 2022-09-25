@@ -1,3 +1,17 @@
+AllCops:
+  TargetRubyVersion: 2.7
+  NewCops: enable
+  SuggestExtensions: false
+  Exclude:
+    - 'bin/**/*'
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'spec/**/*'
+    - 'node_modules/**/*'
+    - 'tmp/**/*'
+    - 'test/**/*'
+    - 'vendor/**/*'
+
 Style/FrozenStringLiteralComment:
   Enabled: false
 Style/Documentation:

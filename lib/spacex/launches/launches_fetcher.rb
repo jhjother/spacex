@@ -1,7 +1,6 @@
 module Spacex
   module Launches
     class LaunchesFetcher
-
       def initialize(action:)
         @action = action
       end

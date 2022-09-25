@@ -1,6 +1,5 @@
 module Spacex
   class Requests
-
     include Spacex::Authenticate
 
     def initialize(url, params = {})

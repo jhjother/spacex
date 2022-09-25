@@ -2,7 +2,6 @@ require 'resolv-replace'
 
 module Spacex
   module Authenticate
-
     extend ActiveSupport::Concern
 
     base_uri = ENV['SPACEX_BASE_URI']
