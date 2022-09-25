@@ -1,0 +1,89 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.spacexdata.com/v4/launches/latest
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic Og==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 23 Sep 2022 20:36:17 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '782'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - spacex-api-cache,spacex-api-response-time
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      Cache-Control:
+      - max-age=20
+      Content-Security-Policy:
+      - 'default-src ''self'';base-uri ''self'';block-all-mixed-content;font-src ''self''
+        https: data:;frame-ancestors ''self'';img-src ''self'' data:;object-src ''none'';script-src
+        ''self'';script-src-attr ''none'';style-src ''self'' https: ''unsafe-inline'';upgrade-insecure-requests'
+      Etag:
+      - '"5e1-C57wYGIxtpbFGqnCCBi7qR0Ys/s"'
+      Expect-Ct:
+      - max-age=0
+      Referrer-Policy:
+      - no-referrer
+      Spacex-Api-Cache:
+      - HIT
+      Spacex-Api-Cache-Online:
+      - 'true'
+      Spacex-Api-Response-Time:
+      - 0ms
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - '0'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=aU%2FDkglqZFWqHKtCrDylOaVU%2F96P%2BYcgWdAm%2FuOxyoJsDca1luxWA5sAQoTLW2nUwP0e%2Fsu3x4khIkzd4RQNen3sn4DnlRkKGIjAWJkCRK6i5sYWxPk7klRFq0qYOSXxl%2BF9W3yo69gtiTJ8WLqzVRc%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 74f61255c9a8275e-GIG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"fairings":{"reused":null,"recovery_attempt":null,"recovered":null,"ships":[]},"links":{"patch":{"small":"https://images2.imgbox.com/a9/9a/NXVkTZCE_o.png","large":"https://images2.imgbox.com/e3/cc/hN96PmST_o.png"},"reddit":{"campaign":"https://www.reddit.com/r/spacex/comments/jhu37i/starlink_general_discussion_and_deployment_thread/","launch":"https://www.reddit.com/r/spacex/comments/xd8vhj/rspacex_starlink_434_launch_discussion_and/","media":null,"recovery":"https://www.reddit.com/r/spacex/comments/k2ts1q/rspacex_fleet_updates_discussion_thread/"},"flickr":{"small":[],"original":[]},"presskit":null,"webcast":"https://youtu.be/ZlQHF_yBkMQ","youtube_id":"ZlQHF_yBkMQ","article":null,"wikipedia":null},"static_fire_date_utc":null,"static_fire_date_unix":null,"net":false,"window":null,"rocket":"5e9d0d95eda69973a809d1ec","success":true,"failures":[],"details":null,"crew":[],"ships":[],"capsules":[],"payloads":["63161699ffc78f3b85670719"],"launchpad":"5e9e4501f509094ba4566f84","flight_number":185,"name":"Starlink
+        4-34 (v1.5)","date_utc":"2022-09-17T01:05:00.000Z","date_unix":1663376700,"date_local":"2022-09-16T21:05:00-04:00","date_precision":"hour","upcoming":false,"cores":[{"core":"60b800111f83cc1e59f16438","flight":6,"gridfins":true,"legs":true,"reused":true,"landing_attempt":true,"landing_success":true,"landing_type":"ASDS","landpad":"5e9e3033383ecbb9e534e7cc"}],"auto_update":true,"tbd":false,"launch_library_id":"9ba04064-c329-40bf-b477-ff468d7d8058","id":"63161329ffc78f3b8567070b"}'
+  recorded_at: Fri, 23 Sep 2022 20:36:17 GMT
+recorded_with: VCR 6.0.0
